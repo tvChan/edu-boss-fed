@@ -55,7 +55,15 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-  name: 'AppAside'
+  name: 'AppAside',
+  methods: {
+    handleClose () {
+      console.log('aaa')
+    },
+    handleOpen () {
+      console.log('aaa')
+    }
+  }
 })
 </script>
 
