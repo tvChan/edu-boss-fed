@@ -35,7 +35,7 @@ export default Vue.extend({
   data () {
     return {
       form: {
-        phone: '18201288771',
+        phone: '15510792995',
         password: '111111'
       },
       rules: {
