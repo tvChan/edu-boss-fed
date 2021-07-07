@@ -45,8 +45,17 @@
           label="操作"
           >
           <template slot-scope="scope">
-            <el-button @click="handleEdit(scope.row)" type="text" size="small">编辑</el-button>
-            <!-- <el-button @click="handleDelete(scope.$index, scope.row)" type="text" size="small">删除</el-button> -->
+            <div>
+              <el-button type="text" @click="$router.push({
+                name: 'alloc-menu',
+                params: { roleId: scope.row.id }
+              })">分配菜单</el-button>
+              <el-button type="text">分配资源</el-button>
+            </div>
+            <div>
+              <el-button @click="handleEdit(scope.row)" type="text" size="small">编辑</el-button>
+              <!-- <el-button @click="handleDelete(scope.$index, scope.row)" type="text" size="small">删除</el-button> -->
+            </div>
           </template>
         </el-table-column>
       </el-table>
